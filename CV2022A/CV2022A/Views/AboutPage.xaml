@@ -15,51 +15,140 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+
+    <Grid BackgroundColor="White">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-          
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="*" />
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+          
+                    </Grid.ColumnDefinitions>
+                    <Image Source="https://i.ibb.co/vBVfFr9/Perfil.jpg" VerticalOptions="Start" HeightRequest="124"  Grid.Row="0" Grid.Column="0" />
+
+                    <Frame CornerRadius="10" Grid.Row="0" Grid.Column="1" Padding="0,0,0,0" Margin="0,0,0,0" >
+                        <Grid BackgroundColor="#D5D5D5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  Height="*" />
+                            <RowDefinition  Height="*" />
+                            <RowDefinition  Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+
+                        <Label   FontSize="17" Text="Miguel cuenca " FontAttributes="Bold"  Grid.Row="0" Grid.Column="0"  />
+
+                        <Label  FontSize="15" Text="Desarrollo de software" FontAttributes="Italic"  Grid.Row="1" Grid.Column="0"  />
+
+                            <Button  BorderRadius="10" 
+                                BorderWidth="2"
+                                BackgroundColor="#9099A2"
+                                BorderColor="#9099A2"
+                                ContentLayout="Left, 40"  
+                                VerticalOptions   ="Center"
+                                HorizontalOptions ="Center"  
+                                CornerRadius="50" 
+                                Text="Contactar" 
+                                Grid.Row="2" Grid.Column="0" Opacity="50" />
+                        </Grid>
+                    </Frame>
+                    
+                    
+                </Grid>
+
+                <Label Text="Especialista en procesos vinculado al desarrollo de aplicaciones e inteligencia de negocios. Soy un apasionado por la tecnología y la mejor.                        " FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                                <Span Text="HABILIDADES " FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
-                <Frame BackgroundColor="DeepPink" Padding="24" CornerRadius="0">
-                    <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-                </Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
 
-                <!--Add Button Here -->
-                <Button Text="Click Me"  Clicked="Handle_Clicked"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition  Width="*" />
+                        <ColumnDefinition  Width="*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10" />
-                <!--More Labels here -->
+                    <Image Source="https://i.ibb.co/4mF4fk7/Java-Script.jpg" VerticalOptions="Start" HeightRequest="64"  Grid.Row="0" Grid.Column="0" Margin="20,20,20,20"/>
+                    <Label Text="Java scrip" Grid.Row="0" Grid.Column="0"                             VerticalOptions="End"/>
+
+                    <Image Source="https://i.ibb.co/xSJm1QL/3920478-middle.png" VerticalOptions="Start" HeightRequest="64"  Grid.Row="0" Grid.Column="1" Margin="20,20,20,20"/>
+                    <Label Text="CSS"  Grid.Row="0" Grid.Column="1" VerticalOptions="End" HorizontalOptions="Center"/>
+
+                    <Image Source="https://i.ibb.co/xS69Q2W/figma.png" VerticalOptions="Start" HeightRequest="64"  Grid.Row="0" Grid.Column="2" Margin="20,20,20,20"/>
+                    <Label Text="Figma"  Grid.Row="0" Grid.Column="2" VerticalOptions="End" HorizontalOptions="Center"/>
+
+
+                    <Image Source="https://i.ibb.co/Bf3d9r4/react.jpg" VerticalOptions="Start" HeightRequest="64"  Grid.Row="1" Grid.Column="0" Margin="20,20,20,20"/>
+                    <Label Text="React"  Grid.Row="1" Grid.Column="0" VerticalOptions="End" HorizontalOptions="Center"/>
+
+
+                    <Image BackgroundColor="AliceBlue" Source="https://i.ibb.co/QjxYPx4/python.jpg" VerticalOptions="Start" HeightRequest="64"  Grid.Row="1" Grid.Column="1" Margin="20,20,20,20"/>
+                    <Label Text="Python"  Grid.Row="1" Grid.Column="1" VerticalOptions="End" HorizontalOptions="Center"/>
+                </Grid>
+                <Label FontSize="16" Padding="0,24,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="EXPERIENCIA" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="14" Text="Fundador | Café lojano de altura  Junio 2020 - Actualidad"/>
+                <Label Text="Soy el encargado de dar a conocer sobre nuestro producto principal el cafe, me encargo de la publicidad por medio de redes sociales, actualizaciones de promociones, precios y distribución a nivel nacional." />
+
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="14" Text="Servicio de atención al cliente  Atimasa | octubre 2013 – abril 2014"/>
+                <Label Text="Encargado del servicio al cliente, de guiar y dar sugerencia al cliente sobre los productos que ofrecíamos en la empresa." />
+
+
+                <Label FontSize="16" Padding="0,24,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="EDUCACION" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="14" Text="Desarrollo de software | Estudiando
+Escuela Politécnica Nacional"/>
+                <Label Text="Me encanta la oportunidad que tuve para poder seguir mis estudiando en la carrera deseada, lo cual me ayudado a formar tanto profesional como en la parte moral, gracias al excelente ambiente que hay en mi área de estudio." />
+
+
+                <Label FontSize="16" Padding="0,24,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="CERTIFICADOS" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="14" Text="NDG Linux Unhatched | Cisco| enero 2021"/>
+                <Label Text="NDG Linux Unhatched permite a los estudiantes navegar en el extremo superficial de Linux, el sistema operativo back-end utilizado por titanes globales como Facebook, Google, Microsoft, NASA, Tesla, Amazon y más." />
             </StackLayout>
         </ScrollView>
     </Grid>
