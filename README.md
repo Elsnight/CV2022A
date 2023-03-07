@@ -8,7 +8,7 @@ Enlace al sitio oficial web: [Descarga][]
 
   [Descarga]: https://drive.google.com/file/d/1EbnDJgkRpU7QJfi16GfJpeCvoZd-frRv/view?usp=sharing
 
-Enlace al sitio oficial web: [Xamarin Forms][]
+Enlace al sitio oficial web: [Flutter][]
 
   [Flutter]: https://docs.flutter.dev/
 
