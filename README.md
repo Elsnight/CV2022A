@@ -10,7 +10,7 @@ Enlace al sitio oficial web: [Descarga][]
 
 Enlace al sitio oficial web: [Xamarin Forms][]
 
-  [Xamarin Forms]: https://dotnet.microsoft.com/en-us/apps/xamarin/xamarin-forms
+  [Flutter]: https://docs.flutter.dev/
 
 EVIDENCIAS DE LA APP
 ========
